@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans & Menu</title>
+</head>
+
+<style>
+    #navbar {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100px;
+        /* border: 1px solid red; */
+        position: sticky;
+        top: 0;
+        cursor: pointer;
+        background-color: #fffdf7;
+
+    }
+
+    #navbar div:nth-child(odd) {
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+        text-align: center;
+        align-items: center;
+        /* border: 1px solid black; */
+        width: 10%;
+        height: 100%;
+    }
+
+    #navbar div:nth-child(2) {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 20px;
+        text-align: center;
+        align-items: center;
+        /* border: 1px solid black; */
+        width: 45%;
+        height: 100%;
+
+
+    }
+
+    .logo img {
+        width: 200px;
+        height: 30px;
+
+    }
+
+    .navigation>a {
+        color: black;
+        text-decoration: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+
+    .signup>a {
+        color: black;
+        text-decoration: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+
+    .signup>a:last-child {
+        background-color: #3167ff;
+        color: white;
+        padding: 10px;
+
+    }
+
+    #navtop {
+        display: flex;
+        justify-content: center;
+        gap: 90px;
+    }
+
+    .new-freshly-logo {
+        width: 100px;
+        height: 23px;
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+
+
+    }
+
+    .nameDiv {
+        display: flex;
+        justify-content: space-evenly;
+        padding-right: 50px;
+        font-size: 30px
+    }
+</style>
+
+<body>
+    <div id="navtop">
+        <a class="new-freshly-logo" href=""> <img
+                src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
+                alt=""></a>
+
+        <a href=""><img
+                src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f7b2e54745410836cfa3955_bizlogo_main-07.svg"
+                alt="" class=""></a>
+
+    </div>
+
+    <div id="navbar">
+
+        <div class="logo">
+            <a href=""><img
+                    src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
+                    alt="" class=""></a>
+
+        </div>
+        <div class="navigation">
+            <a href="plans_&_menu.html" style="color:blue">Plans & Menu</a>
+            <a href="how_it_works.html" >How it Works</a>
+            <a href="gifts.html" >Gifts</a>
+            <a href="cart.html" >Add to Cart</a>
+            <a href="help.html" >Help</a>
+        </div>
+        <div class="signup">
+            <a href="login.html" >Login</a>
+            <a href="signup.html" >Sign Up</a>
+        </div>
+
+    </div>
+
+    <div id="container">
+
+    </div>
+</body>
+
+<script>
+
+   
+
+    var plansData = [
+        {
+            image_url: "https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61063fef3319dbcfa7088dc3_production-meal-image-29fee2e7-8e88-4cd3-aad9-0e7d25671f7f.jpeg",
+            name: "steak peppercorn",
+            cal: "500cal",
+        },
+        {
+            image_url: "https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b8686c6708c070e7d41_production-meal-image-e4122aa8-0fe7-4854-b6f5-e27e0c5be918.jpeg",
+            name: "Homestyle chicken",
+            cal: "560cal"
+        },
+        {
+            image_url: "https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b89b735739065897a4f_production-meal-image-c9eef45a-97a9-487c-9550-71488e5f639a.jpeg",
+            name: "cauliflower shell beef bologenese",
+            cal: "490cal",
+        },
+        {
+            image_url: "https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b8bdf3b65081fd159c6_production-meal-image-f0de55be-d691-4ade-bc26-b4a8aedaa1fe.jpeg",
+            name: "sausage baked penne",
+            cal: "470cal"
+        },
+        {
+            image_url: "https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b8e6dd23b60cb122654_production-meal-image-92ec0fc1-d352-4720-9b83-96798ab8d2de.jpeg",
+            name: "savory-sweet chicken teriyaki bowl",
+            cal: "480cal"
+        },
+        {
+            image_url: "https://assets-global.website-files.com/5d03b4e13011831ae4624b37/610640046931cb5d54bd5472_production-meal-image-7a62bb89-9bcb-4f1f-9f0f-d8372698d48e.jpeg",
+            name: "protein-packed chicken parm",
+            cal: "410cal",
+        },
+        {
+            image_url: "https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b94f03e50f2e0d2b7f3_production-meal-image-bc1b24c8-f62a-4756-a40e-173a8b67a590.jpeg",
+            name: "golden over fried chicken and mash",
+            cal: "510cal",
+        },
+        {
+            image_url: "https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b9a85b43c3383a0a3b3_production-meal-image-ef64cbd3-cc91-4c5f-9865-b9ff0442572e.jpeg",
+            name: "Zingy Buffalo Chicken",
+            cal: "470cal",
+        },
+        {
+            image_url: "https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6106401a005f9f6781262949_production-meal-image-17ade4a4-7351-4ff8-95c6-765d70e5ea5d.jpeg",
+            name: "White Bean Turkey Chili Bowl",
+            cal: "540cal",
+        },
+        {
+            image_url: "https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6ba186c67063830ea67a_production-meal-image-7bfd44a5-38ec-4893-a0ff-d93693b1deb9.jpeg",
+            name: "Pork Carnitas",
+            cal: "480cal",
+        },
+        {
+            image_url: "https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6ba5f589fe69d6562dee_production-meal-image-a4feff11-ec91-43e8-bab5-e6daf8b55eea.jpeg",
+            name: "Sesame-Ginger Chicken & Noodles",
+            cal: "490cal",
+        },
+        {
+            image_url: "https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6ba8406d133a498de788_production-meal-image-e184440d-cfea-4806-b7e3-1e5856975959.jpeg",
+            name: "sauteed french green(11oz)",
+            cal: "140cal",
+        },
+        {
+            image_url: "https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6106401eb621bbc28987f309_production-meal-image-53e1a296-8d48-4ba8-acb3-0d9032960be2.jpeg",
+            name: "Hearty Chipotle-Chicken Stew",
+            cal: "570cal",
+        },
+    ];
+
+    var completed = JSON.parse(localStorage.getItem("completedTodos")) || [];
+    plansData.map(function (elem) {
+
+        var mainDiv = document.createElement("div");
+
+        var img = document.createElement("img");
+        img.setAttribute("src", elem.image_url)
+        img.style.width = elem.image_width = "60%"
+
+        var innerDiv = document.createElement("div");
+
+        var name = document.createElement("p");
+        name.innerText = elem.name
+
+        var cal = document.createElement("p");
+        cal.innerText = elem.cal
+
+        innerDiv.append(name, cal);
+        innerDiv.setAttribute("class", "nameDiv")
+
+        var cart = document.createElement("button");
+        cart.innerText = "add to cart";
+        cart.style.fontSize = "25px";
+        cart.style.borderRadius = "8px";
+
+        cart.addEventListener("click", function () {
+        
+
+                markComplete(elem)
+
+            
+        })
+
+
+        mainDiv.append(img, innerDiv, cart);
+
+        document.querySelector("#container").append(mainDiv);
+
+    })
+
+    function markComplete(elem) {
+
+        completed.push(elem);
+        localStorage.setItem("completedTodos",JSON.stringify(completed));
+         window.location.href="cart.html"
+
+    }
+
+</script>

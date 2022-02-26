@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feshly e-comm websites</title>
+    <script src="https://kit.fontawesome.com/80fa7d5194.js" crossorigin="anonymous"></script>
+    <style>
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 100px;
+            /* border: 1px solid red; */
+            position:sticky;
+            top: 0;
+            cursor: pointer;
+            background-color:#fffdf7;
+
+        }
+
+        #navbar div:nth-child(odd) {
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            text-align: center;
+            align-items: center;
+            /* border: 1px solid black; */
+            width: 10%;
+            height: 100%;
+        }
+
+        #navbar div:nth-child(2) {
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 20px;
+            text-align: center;
+            align-items: center;
+            /* border: 1px solid black; */
+            width: 45%;
+            height: 100%;
+
+
+        }
+
+        .logo img {
+            width: 200px;
+            height: 30px;
+
+        }
+
+        .navigation>a {
+            color: black;
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+
+        .signup>a {
+            color: black;
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+
+        .signup>a:last-child {
+            background-color: #3167ff;
+            color: white;
+            padding: 10px;
+
+        }
+
+        #navtop {
+            display: flex;
+            justify-content: center;
+            gap: 90px;
+        }
+
+        .new-freshly-logo {
+            width: 100px;
+            height: 23px;
+        }
+
+        #topbanner {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* border: 1px solid red; */
+        }
+
+        .left {
+            background-color: #fef9ea;
+            font-size: 40px;
+            padding-left: 90px;
+            padding-right:30px;
+        }
+        .innerleft{
+          font-size: 20px;
+
+        }
+        .innerleft>input{
+           padding: 12px 0px 12px 4px;
+            width: 80%;
+            border: grey;
+            background-color: whitesmoke;
+        
+            
+            
+        }
+        .innerleft>a{
+            background-color: #3167ff;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            
+        }
+        .downsection{
+            line-height:0px;
+        }
+
+        .right>img {
+            width: 100%;
+            height: 100%;
+        }
+        #footer{
+            width: 100%;
+            height: 200px;
+            /* border: 1px solid red; */
+            background-color:whitesmoke;
+            margin-top:50px;
+            display:flex;
+            justify-content:space-evenly;
+            align-items: center;
+            
+
+        }
+        #footer img{
+            width: 191px;
+            height: 74px;
+            justify-content:center;
+        }
+        #bottomsec{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 400px;
+            width:60%;
+            margin: auto; 
+
+            grid-gap: 20px;
+
+        }
+        #bottomsec>div{
+            /* border: 1px solid red; */
+           
+        }
+        #bottomsec  img{
+            width:100px;
+            height: 30px;
+            margin: 25px 0px;
+            margin-bottom:-20px;
+        }
+        /* #bottomsec>div:nth-child(2){
+            font-size:30px;
+        
+        }
+        #bottomsec>div:nth-child(3){
+            font-size:30px;
+        
+        }
+        #bottomsec>div:nth-child(4){
+            font-size:30px;
+        
+        } */
+        #bottomsec a{
+            text-decoration:none;
+            color:grey;
+            font-size: 20px;
+            line-height:40px
+            
+        
+        }
+        #bottomsec>div>p:first-child{
+            font-size:20px;
+            color: black;
+            
+        }
+        #bottomsec p{
+            color:grey;
+            font-size:20px;
+        
+        }
+        #bottomsec>div>a>i{
+            margin-right:20px;
+            
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div id="navtop">
+        <a class="new-freshly-logo" href=""> <img
+                src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
+                alt=""></a>
+
+        <a href=""><img
+                src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f7b2e54745410836cfa3955_bizlogo_main-07.svg"
+                alt="" class=""></a>
+
+    </div>
+
+    <div id="navbar">
+
+        <div class="logo">
+            <a href=""><img
+                    src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
+                    alt="" class=""></a>
+
+        </div>
+        <div class="navigation">
+            <a href="plans_&_menu.html" target="_blank">Plans & Menu</a>
+            <a href="how_it_works.html" >How it Works</a>
+            <a href="gifts.html" >Gifts</a>
+            <a href="cart.html">Add to Cart</a>
+            <a href="help.html">Help</a>
+        </div>
+        <div class="signup">
+            <a href="login.html" >Login</a>
+            <a href="signup.html" >Sign Up</a>
+        </div>
+
+    </div>
+
+    <div id="topbanner">
+        <div class="left">
+            <h1>Chef cooked, healthy meal delivered to you.</h1>
+            
+            <div>
+                <h5>see meals available in your area!</h5>
+                <div class="innerleft">
+                    <label for="">Email Address</label>
+                    <br>
+                    <input type="email" class="" maxlength="256" name="email"  placeholder="freshly@freshly.com" id="email-top-2" required="">
+                    <br>
+                    <br> 
+                    <label>Zip Code</label>
+                    <br>
+                    <input type="number" placeholder="11111">
+                    <a href="">Explore Meal</a>
+                    <div class="downsection">
+                        <p>By continuing, you agree to our  <a href="">terms</a> and <a href="">privacy policy</a></p>
+                       
+                        <p> & will receive emails from Freshly.</p>
+                       
+                        <p></p>
+                    </div>
+                    
+                </div>
+               
+                   
+               
+            </div>
+          
+
+        </div>
+       
+        <div class="right">
+
+                <img src="https://akns-images.eonline.com/eol_images/Entire_Site/2021116/rs_1024x759-210216141414-1024-freshly-fit-clean-eating.jpg?fit=around%7C1024:759&output-quality=90&crop=1024:759;center,top" alt="">
+              
+        </div>
+
+    </div>
+    <div id="footer">
+        <a href="">
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f523e435aee2e3a4ab03e6f_The_Huffington_Post_logo.svg" alt="">
+        </a>
+        <a href="">
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f523e412d98cd166a6c84e6_logo-header.64f3bdc15b1f321829f9f30c7853a1469f469d71.svg" alt="">
+        </a>
+        <a href="">
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f523e436b26e00a240533b1_Entrepreneur-01.svg" alt="">
+        </a>
+        <a href="">
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f523e432759db28ffaf924f_w-g-logo-black.svg" alt="">
+        </a>
+        <a href="">
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f523f552759db186baf93d2_techcrunch-seeklogo.com%20%5BConverted%5D.svg" alt="">
+        </a>
+        <a href="">
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f523e434bbecc1909457f48_logo-header.aeb2e510354d524c42a87c5d0a97d0a73c5d7581.svg" alt="">
+        </a>
+
+    </div>
+
+    <div id="bottomsec">
+        <div>
+            <a href=""><img style="width:100px" src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg" alt="">
+            </a>
+            <p>© Freshly Inc.</p>
+        </div>
+        <div>
+            <p>Company</p>
+            <a href="">Careers</a>
+            <br>
+            <a href="">Conatct us</a>
+            <br>
+            <a href="">Press</a>
+            <br>
+            <a href="">Terms</a>
+            <br>
+            <a href="">Privacy</a>
+            <br>
+            <a href="">Affliates</a>
+            <br>
+            <a href="">Partnership</a>
+        </div>
+        <div>
+            <p>Learn More</p>
+            <a href="">Plans & Menu</a>
+            <br>
+            <a href="">Why Freshly</a>
+            <br>
+            <a href="">Gifts</a>
+            <br>
+            <a href="">FAQ</a>
+            <br>
+            <a href="">Blog</a>
+            <br>
+            <a href="">Students</a>
+        </div>
+        <div>
+            <p>Join Us</p>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-pinterest"></i></a>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
