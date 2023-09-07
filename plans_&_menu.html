@@ -57,7 +57,7 @@
         text-decoration: none;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: bold;
-        font-size: 15px;
+        
     }
 
     .signup>a {
@@ -65,6 +65,8 @@
         text-decoration: none;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: bold;
+        height: 25px;
+        font-size: 16px;
     }
 
     .signup>a:last-child {
@@ -123,14 +125,14 @@
         </div>
         <div class="navigation">
             <a href="plans_&_menu.html" style="color:blue">Plans & Menu</a>
-            <a href="how_it_works.html" >How it Works</a>
-            <a href="gifts.html" >Gifts</a>
-            <a href="cart.html" >Add to Cart</a>
-            <a href="help.html" >Help</a>
+            <a href="how_it_works.html">How it Works</a>
+            <a href="gifts.html">Gifts</a>
+            <a href="cart.html">Add to Cart</a>
+            <a href="help.html">Help</a>
         </div>
         <div class="signup">
-            <a href="login.html" >Login</a>
-            <a href="signup.html" >Sign Up</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
         </div>
 
     </div>
@@ -142,7 +144,7 @@
 
 <script>
 
-   
+
 
     var plansData = [
         {
@@ -238,11 +240,11 @@
         cart.style.borderRadius = "8px";
 
         cart.addEventListener("click", function () {
-        
 
-                markComplete(elem)
 
-            
+            markComplete(elem)
+
+
         })
 
 
@@ -255,8 +257,8 @@
     function markComplete(elem) {
 
         completed.push(elem);
-        localStorage.setItem("completedTodos",JSON.stringify(completed));
-         window.location.href="cart.html"
+        localStorage.setItem("completedTodos", JSON.stringify(completed));
+        window.location.href = "cart.html"
 
     }
 
